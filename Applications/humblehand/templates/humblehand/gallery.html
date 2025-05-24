@@ -1,0 +1,424 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
+
+    <!-- Static Files -->
+
+    <link rel="stylesheet" href="{% static 'css/open-iconic-bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery.timepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="{% url 'index' %}">
+          <img src="{% static 'images/humblehand.png' %}" alt="Humble Hand Logo" class="img-fluid" style="height: 90px; margin-right: 10px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="{% url 'index' %}" class="nav-link">Home</a></li>
+<li class="nav-item"><a href="{% url 'donate' %}" class="nav-link">Donate</a></li>
+<li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About</a></li>
+<li class="nav-item"><a href="{% url 'join' %}" class="nav-link">Join</a></li>
+<li class="nav-item"><a href="{% url 'gallery' %}" class="nav-link">Gallery</a></li>
+<li class="nav-item"><a href="{% url 'events' %}" class="nav-link">Events</a></li>
+<li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">Contact</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END Navbar -->
+
+    <!-- Hero Section -->
+    <div class="hero-wrap" style="background-image: url('{% static 'images/cause-4.jpg' %}');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-7 ftco-animate text-center" data-scrollax="properties: { translateY: '70%' }">
+            <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+              <span class="mr-2"><a href="{% url 'index' %}"></a></span> <span></span>
+            </p>
+            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Our Gallery</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-7 text-center">
+                    <h2 class="mb-4">Capturing Moments of Hope</h2>
+                    <p>Explore our journey through these captured moments of service, joy, and community impact.</p>
+                </div>
+            </div>
+            
+         
+
+            {% comment %} <!-- Gallery Grid -->
+            <div class="row">
+                <!-- Food Distribution -->
+                <div class="col-md-4 gallery-item food">
+                    <div class="gallery-img">
+                        <img src="https://www.shutterstock.com/image-photo/new-delhi-india-june-23-260nw-1435210454.jpg" alt="Food Distribution" class="img-fluid">
+                        <div class="overlay">
+                            <h4>Mid-day Meal Program</h4>
+                            <p>Providing nutritious meals to underprivileged children</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Education -->
+                <div class="col-md-4 gallery-item education">
+                    <div class="gallery-img">
+                        <img src="https://synergyindia.foundation/wp-content/uploads/2023/07/education.jpeg" alt="Education Support" class="img-fluid">
+                        <div class="overlay">
+                            <h4>Education Support</h4>
+                            <p>Empowering children through education</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                 <div class="col-md-4 gallery-item education">
+                    <div class="gallery-img">
+                        <img src="https://synergyindia.foundation/wp-content/uploads/2023/07/education.jpeg" alt="Education Support" class="img-fluid">
+                        <div class="overlay">
+                            <h4>Education Support</h4>
+                            <p>Empowering children through education</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-md-4 gallery-item education">
+                    <div class="gallery-img">
+                        <img src="https://synergyindia.foundation/wp-content/uploads/2023/07/education.jpeg" alt="Education Support" class="img-fluid">
+                        <div class="overlay">
+                            <h4>Education Support</h4>
+                            <p>Empowering children through education</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Health Camps -->
+                <div class="col-md-4 gallery-item health">
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800" alt="Health Camp" class="img-fluid">
+                        <div class="overlay">
+                            <h4>Free Health Camp</h4>
+                            <p>Providing healthcare services to rural communities</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-md-4 gallery-item education">
+                    <div class="gallery-img">
+                        <img src="https://synergyindia.foundation/wp-content/uploads/2023/07/education.jpeg" alt="Education Support" class="img-fluid">
+                        <div class="overlay">
+                            <h4>Education Support</h4>
+                            <p>Empowering children through education</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-md-4 gallery-item education">
+                    <div class="gallery-img">
+                        <img src="https://synergyindia.foundation/wp-content/uploads/2023/07/education.jpeg" alt="Education Support" class="img-fluid">
+                        <div class="overlay">
+                            <h4>Education Support</h4>
+                            <p>Empowering children through education</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-md-4 gallery-item education">
+                    <div class="gallery-img">
+                        <img src="https://synergyindia.foundation/wp-content/uploads/2023/07/education.jpeg" alt="Education Support" class="img-fluid">
+                        <div class="overlay">
+                            <h4>Education Support</h4>
+                            <p>Empowering children through education</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Special Events -->
+                <div class="col-md-4 gallery-item events">
+                    <div class="gallery-img">
+                        <img src="https://thumbs.dreamstime.com/b/holi-festival-happy-holi-delhi-india-march-tourists-students-jawaharlal-nehru-university-celebrate-march-delhi-india-76551537.jpg" alt="Cultural Event" class="img-fluid">
+                        <div class="overlay">
+                            <h4>Cultural Celebration</h4>
+                            <p>Celebrating Indian festivals with communities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> {% endcomment %}
+
+
+    <!-- Gallery Grid -->
+<div class="row">
+    <!-- Food Distribution -->
+    <div class="col-md-4 gallery-item food">
+        <div class="gallery-img">
+            <img src="https://childvikasfoundation.org/assets/images/food-distribution/1.jpg" alt="Food Distribution" class="img-fluid">
+            <div class="overlay">
+                <h4>Mid-day Meal Program</h4>
+                <p>Providing nutritious meals to underprivileged children</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education Support -->
+    <div class="col-md-4 gallery-item education">
+        <div class="gallery-img">
+            <img src="https://www.smilefoundationindia.org/blog/wp-content/uploads/2023/08/337093883_900957657780171_3683813702497218353_n.jpg" alt="Education Support" class="img-fluid">
+            <div class="overlay">
+                <h4>Education for All</h4>
+                <p>Free school programs for street and slum children</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Health Camps -->
+    <div class="col-md-4 gallery-item health">
+        <div class="gallery-img">
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800" alt="Health Camp" class="img-fluid">
+            <div class="overlay">
+                <h4>Free Health Camp</h4>
+                <p>Providing healthcare services to rural communities</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stationery Distribution -->
+    <div class="col-md-4 gallery-item education">
+        <div class="gallery-img">
+            <img src="https://www.infosys.com/content/dam/infosys-web/en/global-resource/24/school-bags-2.jpg" alt="Stationery Kit Distribution" class="img-fluid">
+            <div class="overlay">
+                <h4>Stationery Kit Distribution</h4>
+                <p>Supporting education with notebooks, pens, and bags</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Classrooms -->
+    <div class="col-md-4 gallery-item education">
+        <div class="gallery-img">
+            <img src="https://ngobox.org/news/NGO%20Education.jpg" alt="Mobile Classroom" class="img-fluid">
+            <div class="overlay">
+                <h4>Mobile Classrooms</h4>
+                <p>Bringing education to doorsteps in slums and villages</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Free Medicine Distribution -->
+    <div class="col-md-4 gallery-item health">
+        <div class="gallery-img">
+            <img src="https://www.americares.org/wp-content/uploads/in1304_ao_01dsc_0391-1.jpg" alt="Medicine Distribution" class="img-fluid">
+            <div class="overlay">
+                <h4>Medicine Distribution</h4>
+                <p>Supplying essential medicines to children in need</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nutrition Awareness -->
+    <div class="col-md-4 gallery-item food">
+        <div class="gallery-img">
+            <img src="https://www.unicef.org/india/sites/unicef.org.india/files/styles/hero_extended/public/UN0595238.webp?itok=7XOvgDTH" alt="Nutrition Camp" class="img-fluid">
+            <div class="overlay">
+                <h4>Nutrition Awareness</h4>
+                <p>Educating children and parents about healthy food choices</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Volunteer Teaching -->
+    <div class="col-md-4 gallery-item education">
+        <div class="gallery-img">
+            <img src="https://en-media.thebetterindia.com/uploads/2024/08/teaching-underprivileged-kids-7-1724839700.jpg" alt="Volunteer Teaching" class="img-fluid">
+            <div class="overlay">
+                <h4>Volunteer Teachers</h4>
+                <p>Volunteers mentoring and teaching poor children</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cultural Celebrations -->
+    <div class="col-md-4 gallery-item events">
+        <div class="gallery-img">
+            <img src="https://thumbs.dreamstime.com/b/holi-festival-happy-holi-delhi-india-march-tourists-students-jawaharlal-nehru-university-celebrate-march-delhi-india-76551537.jpg" alt="Cultural Event" class="img-fluid">
+            <div class="overlay">
+                <h4>Cultural Celebration</h4>
+                <p>Celebrating Indian festivals with underprivileged children</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+        
+
+    <style>
+    .gallery-categories {
+        margin-bottom: 30px;
+    }
+    
+    .gallery-categories .btn {
+        margin: 0 5px;
+        border-radius: 20px;
+        padding: 8px 20px;
+    }
+    
+    .gallery-img {
+        position: relative;
+        margin-bottom: 30px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .gallery-img img {
+        transition: transform 0.3s ease;
+    }
+    
+    .gallery-img:hover img {
+        transform: scale(1.1);
+    }
+    
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,0.7);
+        color: white;
+        padding: 20px;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+    }
+    
+    .gallery-img:hover .overlay {
+        transform: translateY(0);
+    }
+    
+    .story-card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        margin-bottom: 30px;
+    }
+    
+    .story-content {
+        padding: 20px;
+    }
+    
+    .story-content h4 {
+        color: #f86f2d;
+        margin-bottom: 10px;
+    }
+    </style>
+
+    <script>
+    $(document).ready(function() {
+        $('.gallery-categories button').click(function() {
+            $('.gallery-categories button').removeClass('active');
+            $(this).addClass('active');
+            
+            const filter = $(this).data('filter');
+            if (filter === 'all') {
+                $('.gallery-item').show();
+            } else {
+                $('.gallery-item').hide();
+                $('.gallery-item.' + filter).show();
+            }
+        });
+    });
+    </script>
+
+    <!-- Loader -->
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
+      </svg>
+    </div>
+
+    <section class="ftco-section contact-section ftco-degree-bg">
+      <div class="container">
+        <div class="row d-flex mb-5 contact-info">
+          <div class="col-md-12 mb-4">
+            <h2 class="h4">Contact Information</h2>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-md-3">
+            <p><span>Address:</span> Vadodara</p>
+          </div>
+          <div class="col-md-3">
+        <!--<p><span>Phone:</span> <a href="tel://1234567920">+91 7048660327</a></p>-->
+            <p><span>Phone:</span> <a href="tel://xxxxxxxxxx">+91 xxxxxxxxxx</a></p>
+          </div>
+          <div class="col-md-3">
+            <p><span>Email:</span> <a href="mailto:info@humblehandfoundation.org">info@humblehandfoundation.org</a></p>
+          </div>
+         </div>
+      </div>
+    </section>
+
+
+    <!-- Scripts -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/aos.js' %}"></script>
+    <script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap-datepicker.js' %}"></script>
+    <script src="{% static 'js/jquery.timepicker.min.js' %}"></script>
+    <script src="{% static 'js/scrollax.min.js' %}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="{% static 'js/google-map.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+  </body>
+</html>
+
+
+
+
+{% include 'Humblehand/footer.html' %}
+
